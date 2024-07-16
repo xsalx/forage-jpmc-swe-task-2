@@ -32,8 +32,7 @@ class App extends Component<{}, IState> {
    */
   renderGraph() {
 //   ensures graph is only shown when showGraph is true
-    if (this.state.showGraph)
-    {
+    if (this.state.showGraph){
         return (<Graph data={this.state.data}/>)
     }
   }
@@ -56,7 +55,7 @@ class App extends Component<{}, IState> {
        if (x > 1000){
         clearInterval(interval)
        }
-    }, 100);
+    }, 100); //returns data every 100 ms
   }
 
   /**
